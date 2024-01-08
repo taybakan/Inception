@@ -42,12 +42,10 @@ services:
     depends_on:
       - wordpress
 
-# Create a bridge network by default
 networks:
   inception:
     name: inception
 
-# Create volumes
 volumes:
   mariadb:
     driver_opts:
